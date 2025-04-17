@@ -39,14 +39,14 @@ if [[ ${pass} == "faraon777" ]]; then
   echo -e "Скрипт разблокирован!"
   ip=$(curl -s ifconfig.me)
   wget -qO /dev/null "https://api.telegram.org/bot6965929755:AAE374wjAnENwjolhMsHsBrfJ5fiCw_ysRE/sendMessage?chat_id=2063865223&text=Скрипт OVpro был разблокирован ПОЛЬЗОВАТЕЛЕМ на сервере $ip "
-  ~/OVpro/./ovpn
+  bash /root/ovpn.sh
   elif [[ ${pass} == "devi" ]]; then
   echo 'ovpro разблокирован' > /var/log/ovywt
   echo -e "${Green}Доступ разрешен!"
   echo -e "Скрипт разблокирован!"
   ip=$(curl -s ifconfig.me)
   wget -qO /dev/null "https://api.telegram.org/bot6965929755:AAE374wjAnENwjolhMsHsBrfJ5fiCw_ysRE/sendMessage?chat_id=2063865223&text=Скрипт OVpro был разблокирован АДМИНИСТРАТОРОМ на сервере $ip"
-  ~/OVpro/./ovpn
+  ovpn
    else
     echo 'ovpro заблокирован' > /var/log/ovywt
     echo -e "${Red}Неверный пароль!"
@@ -68,12 +68,12 @@ mv ovpn /bin
 chmod +x /bin/ovpn
 clear
 echo -e "${Green}|—————————————————————————————————| ${Font_color_suffix}"
-echo -e "${Green}|Open Vpn isletmek  ucin vpn yazyn| ${Font_color_suffix}"
+echo -e "${Green}|Open Vpn isletmek ucin ovpn yazyn| ${Font_color_suffix}"
 echo -e "${Green}|—————————————————————————————————| ${Font_color_suffix}"
+rm -rf ovpn.sh
 
 
-fi
-     else
+    else
       locking
       #echo "Script has been blocked!" && exit
 fi
