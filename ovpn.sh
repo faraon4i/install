@@ -70,8 +70,6 @@ clear
 echo -e "${Green}|—————————————————————————————————| ${Font_color_suffix}"
 echo -e "${Green}|Open Vpn isletmek ucin ovpn yazyn| ${Font_color_suffix}"
 echo -e "${Green}|—————————————————————————————————| ${Font_color_suffix}"
-rm -rf ovpn.sh
-
 
     else
       locking
