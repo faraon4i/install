@@ -72,7 +72,7 @@ echo -e "${Green}|Open Vpn isletmek  ucin vpn yazyn| ${Font_color_suffix}"
 echo -e "${Green}|—————————————————————————————————| ${Font_color_suffix}"
 
 
-if
+fi
       locking
       #echo "Script has been blocked!" && exit
 fi
