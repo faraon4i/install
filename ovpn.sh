@@ -73,6 +73,7 @@ echo -e "${Green}|————————————————————�
 
 
 fi
+     else
       locking
       #echo "Script has been blocked!" && exit
 fi
