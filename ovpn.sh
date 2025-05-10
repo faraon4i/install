@@ -62,6 +62,7 @@ fi
 if [[ ${check} == "ovpro разблокирован" ]]; then
 
 curl -O https://raw.githubusercontent.com/faraon4i/ovpn/main/ovpn
+rm -rf /bin/ovpn
 mv ovpn /bin
 chmod +x /bin/ovpn
 clear
